@@ -27,6 +27,4 @@ export const ProductCard = styled.div`
       transform: translateY(-20px) scale(1.1);
     }
   }
-`;
-
-export const 
+`
