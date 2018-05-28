@@ -13,7 +13,7 @@ export const Image = styled.img`
 export const Data = styled.div`
   width:30%;
   font-family: 'PT Sans', sans-serif;
-  color: Black;
+  color: Green;
   position: relative;
   float: left;
   margin: 0 auto;
