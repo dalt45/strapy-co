@@ -5,9 +5,9 @@ const ProductSquare= ({price,name,image,brand}) => (
     <ProductCard>
         <Image src={image}/>
         <Data>
-            <span><h1>{name}</h1></span>
-            <span><h1>{price}</h1></span>
-            <span> {brand}</span>
+            <span><p>{name}</p></span>
+            <span><p>{price}</p></span>
+            <span>{brand}</span>
         </Data>
     </ProductCard>
 );

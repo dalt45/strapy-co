@@ -32,7 +32,7 @@ color: white;
 
 export const CarouselDiv = styled.div`
 size:70%;
-width:1080px;
+width:70%;
 position:relative;
 margin: 0 auto;
 `;

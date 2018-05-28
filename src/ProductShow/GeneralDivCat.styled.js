@@ -6,4 +6,5 @@ height: 80px;
 color: black;
 font-family: 'Baloo Chettan', cursive;
 text-align:center;
+margin-bottom:30px
 `;
