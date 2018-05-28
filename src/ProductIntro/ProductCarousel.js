@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
-import {Carousel} from 'react-bootstrap'
+import {Carousel,Row,Col,Grid} from 'react-bootstrap'
 import { CarouselDiv } from "../Head/Head.styled"
 
 
 class ProductCarousel extends Component{
     render(){
         return(
+            <Grid fluid={true}>
+            <Row>
+            <Col xsHidden md={12}>
             <CarouselDiv>
            <Carousel>
             <Carousel.Item>
@@ -31,6 +34,9 @@ class ProductCarousel extends Component{
             </Carousel.Item>
             </Carousel>
             </CarouselDiv>
+            </Col>
+            </Row>
+            </Grid>
         )
     }
 }

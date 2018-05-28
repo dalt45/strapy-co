@@ -1,27 +1,29 @@
 import styled from "styled-components";
 
 export const Image = styled.img`
-  flex: 1;
-  expo: contain;
-  max-width: 200px;
-  max-height:250px;
+  max-width: 100%;
+  max-height:98%;
   transition: all cubic-bezier(0.4, 0, 1, 1) 200ms;
-  margin 0 auto;
-  float:left
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 export const Data = styled.div`
-  width:30%;
-  font-family: 'PT Sans', sans-serif;
-  color: Green;
-  position: relative;
+  width:50%;
+  height: 100%
   float: left;
+  position:relative;
   margin: 0 auto;
+  font-family: 'Open Sans Condensed', sans-serif;
 `;
 
 export const ProductCard = styled.div`
-  width: 33%;
+  float:left;
+  margin: 0 auto;
+  margin-bottom:30px;
   height: 300px;
+  width:100%;
   transition: all ease 200ms;
   &:hover {
     ${Image} {
@@ -29,3 +31,27 @@ export const ProductCard = styled.div`
     }
   }
 `;
+
+export const ImgDiv = styled.div`
+  height: 300px;
+  width:50%;
+  float:left;
+  `;
+
+  export const ProductName = styled.h1`
+  color: #FF7175;
+  font-family: 'Open Sans Condensed', sans-serif;
+  
+  `;
+
+  export const ProductPrice = styled.h1`
+  color: Black;
+  font-family: 'Open Sans Condensed', sans-serif;
+  `;
+
+
+  export const ProductBrand = styled.h1`
+  color: Green;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size:20px;
+  `;

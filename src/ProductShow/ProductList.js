@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import ProductSquare from './ProductCard'
 import {Container} from "./ProductList.styled";
+import {Grid, Row, Col} from 'react-bootstrap'
 
 const productData = require('./product.json')
 
@@ -30,16 +31,23 @@ class ProductList extends Component{
         }
 
         return(
-            <Container>
-                {this.state.data.map(product=>
-                    (<ProductSquare
+            <Grid fluid={true}>
+            <Row className="show-grid">
+            {this.state.data.map(product=>
+                     (
+                  
+                    <Col xs={6} md={4}>
+                     <ProductSquare
                         name={ product.name}
                         image={product.imgUrl}
-                        price={"$"+product.price}
+                        price={"$"+product.price+".00"}
                         brand={product.brand}
-                    />)
-                )}
-            </Container>
+                    />
+                    </Col>
+                    )
+                    )} 
+                        </Row>
+            </Grid>
         )
     }
 }
