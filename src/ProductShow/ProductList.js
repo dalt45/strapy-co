@@ -36,7 +36,7 @@ class ProductList extends Component{
             {this.state.data.map(product=>
                      (
                   
-                    <Col xs={6} md={4}>
+                    <Col xs={12} md={4}>
                      <ProductSquare
                         name={ product.name}
                         image={product.imgUrl}
