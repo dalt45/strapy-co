@@ -7,13 +7,12 @@ class Head extends Component{
     render(){
         // Todo poner condicionales para mostrar información del usuario en caso de cookies
         return(
-
+            //<LogInButtons id="loginButton"><span>Login</span></LogInButtons>
+            //<LogInButtons id="loginButton"><span>Crea una cuenta</span></LogInButtons>
 
             <HeadBar>
                         <Title><span>Strappy Co.</span></Title>
                         <logContainer>
-                          <LogInButtons id="loginButton"><span>Login</span></LogInButtons>
-                          <LogInButtons id="loginButton"><span>Crea una cuenta</span></LogInButtons>
                         </logContainer>
             </HeadBar>
             
